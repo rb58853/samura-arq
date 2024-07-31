@@ -5,7 +5,7 @@ import './styles/desktop.css'
 function Home() {
     return (
         <section className="home">
-            <img className='homeImage' src={process.env.PUBLIC_URL + '/images/home.jpg'} />
+            <img className='homeImage' src={process.env.PUBLIC_URL + '/images/home.jpg'} alt='home'/>
             <Projects />
         </section>
     )
@@ -14,7 +14,7 @@ function Home() {
 function Projects() {
     const projects = GetProjects()
     const projectsView = Object.values(projects).map(item => {
-        return <Project data={item} />
+        return <Project project={item} />
     })
     return (
         <div className='projectsWidgets'>
@@ -24,24 +24,25 @@ function Projects() {
     )
 
 }
-function Project({ data }) {
-    const name = data.name
-    const description = data.description
-    const image = data.image
+function Project({ project }) {
     return (
-        <div className='projectWidget'>
-            <img src={image} alt="image" />
+        <Link to={'/project'} className='projectWidget'
+            onMouseDown={() => { }}
+        >
+            <img src={project.image} alt="project" />
 
             <div className='projectWidgetInfo'>
-                <h4>{name}</h4>
-                <p>{description}</p>
+                <h4>{project.name}</h4>
+                <p>{project.description}</p>
             </div>
 
-            <Link className='projectWidgetView'>
+            {/* <Link className='projectWidgetView'
+                onMouseDown={() => { }}
+            >
                 <h2>{name}</h2>
                 <h3>VIEW</h3>
-            </Link>
-        </div>
+            </Link> */}
+        </Link>
     )
 }
 
