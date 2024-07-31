@@ -1,0 +1,38 @@
+.topBar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: var(--bar-color);
+    height: 8vh;
+    place-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 100%;
+    margin-left: 15vw;
+}
+
+.buttonsNavigate {
+    display: flex;
+    /* background-color: rgb(92, 70, 29); */
+    width: fit-content;
+    gap: 5vw;
+    margin-right: 15vw;
+    margin-left: auto;
+}
+
+.button {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--bar-text-color);
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover {
+    color: rgb(255, 255, 255);
+}
