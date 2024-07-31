@@ -10,7 +10,7 @@ export const sesionSlice = createSlice({
     initialState,
     reducers: {
         setSesion: (state, action) => {
-            state.name = action.payload.name;
+            state.name = action.payload;
         },
     }
 });

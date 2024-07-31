@@ -33,6 +33,10 @@
     transition-timing-function: ease-in-out;
 }
 
+.button.active {
+    color: rgb(255, 255, 255);
+}
+
 .button:hover {
     color: rgb(255, 255, 255);
 }
