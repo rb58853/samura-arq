@@ -17,19 +17,25 @@ function ButtonsNavigate() {
     const sesion = useSelector((state) => state.sesion).name
     return (
         <div className='buttonsNavigate'>
-            <Link className={`button ${sesion === 'home' ? 'active' : ''}`} to='/'
+            <Link
+                className={`button ${sesion === 'home' ? 'active' : ''}`}
+                to='/'
                 onMouseDown={() => { dispatch(setSesion('home')) }}
             >
                 HOME
             </Link>
 
-            <Link className={`button ${sesion === 'portfolio' ? 'active' : ''}`} to='/'
+            <Link
+                className={`button ${sesion === 'portfolio' ? 'active' : ''}`}
+                to='/'
                 onMouseDown={() => { dispatch(setSesion('portfolio')) }}
             >
                 PORTFOLIO
             </Link>
 
-            <Link className={`button ${sesion === 'about' ? 'active' : ''}`} to='/'
+            <Link
+                className={`button ${sesion === 'about' ? 'active' : ''}`}
+                to='/about'
                 onMouseDown={() => { dispatch(setSesion('about')) }}
             >
                 ABOUT US

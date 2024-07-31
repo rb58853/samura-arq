@@ -2,14 +2,29 @@ import './styles/desktop.css'
 import { useSelector } from "react-redux"
 
 function ProjectView() {
-    const project = useSelector((state) => state.project)
-    const name = project.name
+    const project = useSelector((state) => state.project).project
 
     return (
         <div className="projectView">
-            <h1>
-                {name}
-            </h1>
+
+            <div className="projectViewBox">
+                <img className="projectViewImage" src={project.image} alt="" />
+                <div className="projectViewInfo">
+                    <div className="projectViewInfoBasic">
+                        <p>{project.city}</p>
+                        <h4>{project.name}</h4>
+                        <p>{project.date}</p>
+                        <p>{'<volver'}</p>
+
+                    </div>
+                    <p className="projectViewInfoDescription">
+                        {project.description}
+                        <p>
+                            {project.extraDescription}
+                        </p>
+                    </p>
+                </div>
+            </div>
         </div>
     )
 

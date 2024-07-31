@@ -1,9 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    name: 'none',
-    description: 'none',
-    image: '',
+    project: null
 };
 
 
@@ -12,9 +10,7 @@ export const projectSlice = createSlice({
     initialState,
     reducers: {
         setProject: (state, action) => {
-            state.name = action.payload.name;
-            state.description = action.payload.description;
-            state.image = action.payload.image;
+            state.project = action.payload
         },
     }
 });
