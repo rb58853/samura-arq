@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import wsReducer from "./websocket/wsSlice";
+import projectReducer from "./project/projectSlice";
 
 export const store = configureStore({
   reducer: {
-    ws: wsReducer,
+    project: projectReducer,
   },
 });
