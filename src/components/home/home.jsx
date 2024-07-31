@@ -3,6 +3,7 @@ import { GetProjects } from './request'
 import './styles/desktop.css'
 import { useDispatch } from 'react-redux'
 import { setProject } from '../../redux/project/projectSlice'
+import { useEffect } from 'react'
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
 
 function Projects() {
     const projects = GetProjects()
-    const projectsView = Object.values(projects).map(item => {
+    const projectsView = projects.map(item => {
         return <Project project={item} />
     })
     return (
