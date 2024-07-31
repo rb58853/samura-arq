@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import { GetProjects } from './request'
 import './styles/desktop.css'
+import { useDispatch } from 'react-redux'
+import { setProject } from '../../redux/project/projectSlice'
 
 function Home() {
     return (
         <section className="home">
-            <img className='homeImage' src={process.env.PUBLIC_URL + '/images/home.jpg'} alt='home'/>
+            <img className='homeImage' src={process.env.PUBLIC_URL + '/images/home.jpg'} alt='home' />
             <Projects />
         </section>
     )
@@ -25,9 +27,11 @@ function Projects() {
 
 }
 function Project({ project }) {
+    const dispatch = useDispatch()
+
     return (
         <Link to={'/project'} className='projectWidget'
-            onMouseDown={() => { }}
+            onMouseDown={() => { dispatch(setProject(project)) }}
         >
             <img src={project.image} alt="project" />
 
@@ -35,13 +39,6 @@ function Project({ project }) {
                 <h4>{project.name}</h4>
                 <p>{project.description}</p>
             </div>
-
-            {/* <Link className='projectWidgetView'
-                onMouseDown={() => { }}
-            >
-                <h2>{name}</h2>
-                <h3>VIEW</h3>
-            </Link> */}
         </Link>
     )
 }
