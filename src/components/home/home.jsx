@@ -4,13 +4,17 @@ import './styles/desktop.css'
 import './styles/mobile.css'
 import { useDispatch } from 'react-redux'
 import { setProject } from '../../redux/project/projectSlice'
+import BottomBar from '../bars/bottomBar/bottomBar'
 
 function Home() {
     return (
-        <section className="home">
-            <img className='homeImage' src={process.env.PUBLIC_URL + '/images/home.jpg'} alt='home' />
-            <Projects />
-        </section>
+        <div className='fullContainer'>
+            <section className="home">
+                <img className='homeImage' src={process.env.PUBLIC_URL + '/images/home.jpg'} alt='home' />
+                <Projects />
+            </section>
+            <BottomBar />
+        </div>
     )
 }
 

@@ -1,11 +1,21 @@
+.fullContainer {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
 .home {
     margin-top: 8vh;
+    min-height: 68vh ;
+    /* flex-grow: 1; */
     display: flex;
     flex-direction: column;
     place-items: center;
     width: 100%;
     overflow-y: auto;
     background-color: var(--background-color);
+    /* background-color: brown; */
 }
 
 .homeImage {
@@ -14,11 +24,13 @@
 
 .projectsWidgets {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: min(90%, max(40%, 600px));
     display: flex;
     flex-direction: column;
     place-items: center;
     gap: 20px;
+    /* background-color: rgba(0, 0, 255, 0.205); */
 }
 
 .projectWidget {

@@ -1,21 +1,16 @@
-.fullContainer {
-    display: flex;
-    place-content: center;
-    place-items: center;
-    flex-direction: column;
-}
-
 .projectView {
     margin-top: 12vh;
-    margin-bottom: 4vh;
+    /* margin-bottom: 4vh; */
     display: flex;
     flex-direction: column;
     place-content: center;
     place-items: center;
-    min-height: 84vh;
+    min-height: 82vh;
     max-height: 1000vh;
     width: 90%;
     /* background-color: turquoise; */
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
 }
 
 .projectViewBox {

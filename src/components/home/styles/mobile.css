@@ -1,6 +1,7 @@
 @media(max-width:700px) {
     .home {
         margin-top: 6vh;
+        min-height: 70vh;
     }
 
     .projectWidget {
