@@ -5,7 +5,8 @@
   flex-direction: column;
   place-items: center;
   background-color: var(--background-color);
-  height: 100vh;
+  min-height: 100vh;
+  /* max-height: 1000vh; */
   color: var(--default-text-color);
 }
 

@@ -1,45 +1,83 @@
+.fullContainer{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+}
 .projectView {
     margin-top: 12vh;
+    margin-bottom: 4vh;
     display: flex;
     flex-direction: column;
     place-content: center;
     place-items: center;
     min-height: 84vh;
+    max-height: 1000vh;
     width: 90%;
+    background-color: turquoise;
 }
 
 .projectViewBox {
     display: flex;
     flex-direction: column;
-    gap: 10%;
-    height: 100%;
+    gap: 30px;
+    max-height: 100%;
     width: min(60vh, 100%);
-    
-
     place-items: center;
     place-content: center;
-    /* background-color: brown; */
+    background-color: brown;
 }
 
 .projectViewImage {
-    /* height: min(50%,65vw); */
     width: 100%;
-    overflow-y: hidden;
+    height: auto;
+    /* object-fit: cover; */
 }
 
 .projectViewInfo {
     display: flex;
-    /* background-color: aqua; */
+    background-color: rgb(25, 0, 255);
     width: 100%;
     max-height: 40%;
+    gap: 10px;
 
 }
 
+.projectViewInfoMobile {
+    display: none;
+}
+
 .projectViewInfoBasic {
+    display: flex;
+    flex-direction: column;
     min-width: 45%;
+    /* background-color: aquamarine; */
+    /* height: 100%; */
+}
+.projectViewInfoBasic>* {
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .projectViewInfoDescription {
     min-width: 45%;
     overflow-y: auto;
+    flex-grow: 1;
+    /* max-height: 200px; */
+    background-color: rgba(137, 43, 226, 0.37);
+    /* margin-top:auto ; */
+    /* height: 100%; */
+}
+
+.back {
+    margin-top: auto;
+    margin-bottom: 0px;
+    font-weight: 600;
+    /* background-color: white; */
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+.backMobile {
+    display: none;
 }
