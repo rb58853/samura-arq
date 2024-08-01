@@ -1,0 +1,85 @@
+.about {
+    margin-top: 8vh;
+    margin-bottom: 24vh;
+    display: flex;
+    flex-direction: column;
+    place-content: start;
+    place-items: center;
+    min-height: 68vh;
+    width: 100%;
+    background-color: var(--background-color);
+
+}
+
+.aboutSamuraBack {
+    background-color: var(--bar-color);
+    color: var(--bar-text-color);
+    width: 100%;
+    display: flex;
+    place-content: center;
+
+}
+
+.aboutSamura {
+    display: flex;
+    place-items: center;
+    width: 60vh;
+    gap: 10%;
+    padding: 30px;
+}
+
+.aboutSamura>img {
+    width: min(25%, 200px);
+}
+
+.profiles {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    place-items: center;
+    place-content: center;
+    width: 60vh;
+    max-width: 90%;
+    /* background-color: azure; */
+}
+
+.profile {
+    display: flex;
+    gap: 30px;
+    height: 25vh;
+    width: 100%;
+    /* background-color: brown; */
+    place-items: center;
+}
+
+.profile>img {
+    max-height: 100%;
+    max-width: 25vh;
+    width: 50%;
+}
+
+.profile>div>h5 {
+    margin-block: 0px;
+}
+
+.profile>div>h3 {
+    margin-top: 0px;
+}
+
+.profile>div>a {
+    color: var(--text-color);
+}
+
+.profileInfo{
+    max-height: 100%;    
+    /* background-color: aqua; */
+    overflow-y: auto;
+}
+.profileInfo>p{
+    max-height: 15vh;    
+    /* background-color: blue; */
+    overflow-y: auto;
+}

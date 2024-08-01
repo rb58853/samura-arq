@@ -20,7 +20,7 @@ function ButtonsNavigate() {
             <Link
                 className={`button ${sesion === 'home' ? 'active' : ''}`}
                 to='/'
-                onMouseDown={() => { dispatch(setSesion('home')) }}
+                onClick={() => { dispatch(setSesion('home')) }}
             >
                 HOME
             </Link>
@@ -28,7 +28,7 @@ function ButtonsNavigate() {
             <Link
                 className={`button ${sesion === 'portfolio' ? 'active' : ''}`}
                 to='/'
-                onMouseDown={() => { dispatch(setSesion('portfolio')) }}
+                onClick={() => { dispatch(setSesion('portfolio')) }}
             >
                 PORTFOLIO
             </Link>
@@ -36,7 +36,7 @@ function ButtonsNavigate() {
             <Link
                 className={`button ${sesion === 'about' ? 'active' : ''}`}
                 to='/about'
-                onMouseDown={() => { dispatch(setSesion('about')) }}
+                onClick={() => { dispatch(setSesion('about')) }}
             >
                 ABOUT US
             </Link>

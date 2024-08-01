@@ -3,7 +3,6 @@ import { GetProjects } from './request'
 import './styles/desktop.css'
 import { useDispatch } from 'react-redux'
 import { setProject } from '../../redux/project/projectSlice'
-import { useEffect } from 'react'
 
 function Home() {
     return (
