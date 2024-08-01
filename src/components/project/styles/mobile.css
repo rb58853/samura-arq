@@ -1,0 +1,12 @@
+@media(max-width:700px) {
+    .projectViewInfo {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        max-height: 40%;
+
+        
+        flex-direction: column;
+
+    }
+}

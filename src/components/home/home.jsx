@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { GetProjects } from './request'
 import './styles/desktop.css'
+import './styles/mobile.css'
 import { useDispatch } from 'react-redux'
 import { setProject } from '../../redux/project/projectSlice'
 

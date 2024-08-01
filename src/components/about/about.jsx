@@ -2,6 +2,7 @@ import Markdown from 'react-markdown';
 import BottomBar from '../bars/bottomBar/bottomBar'
 import { GetMembers, GetSamura } from './request'
 import './styles/desktop.css'
+import './styles/mobile.css'
 
 function About() {
     return (

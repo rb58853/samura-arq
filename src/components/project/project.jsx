@@ -1,4 +1,5 @@
 import './styles/desktop.css'
+import './styles/mobile.css'
 import { useSelector } from "react-redux"
 
 function ProjectView() {
@@ -27,6 +28,5 @@ function ProjectView() {
             </div>
         </div>
     )
-
 }
 export default ProjectView

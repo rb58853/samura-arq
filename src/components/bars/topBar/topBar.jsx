@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './styles/desktop.css'
+import './styles/mobile.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { setSesion } from '../../../redux/sesion/sesionSlice'
 

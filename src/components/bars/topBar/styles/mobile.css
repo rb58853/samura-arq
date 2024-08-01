@@ -1,0 +1,16 @@
+@media(max-width:700px) {
+    .topBar {
+        height: 6vh;
+    }
+    .logo {
+        margin-left: 3vw;
+        height: 140%;
+    }
+
+    .buttonsNavigate {
+        gap: 3vw;
+        margin-right: 3vw;
+        max-width: 50%;
+        font-size: 70%;
+    }
+}
