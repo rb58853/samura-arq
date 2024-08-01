@@ -6,7 +6,7 @@ import { setSesion } from '../../../redux/sesion/sesionSlice'
 function TopBar() {
     return (
         <div className="topBar">
-            <img className='logo' src={process.env.PUBLIC_URL + '/logo/white.png'} />
+            <img className='logo' src={process.env.PUBLIC_URL + '/logo/white.png'} alt='logo' />
             <ButtonsNavigate />
         </div>
     )

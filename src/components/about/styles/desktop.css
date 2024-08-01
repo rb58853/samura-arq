@@ -3,7 +3,7 @@
     margin-bottom: 24vh;
     display: flex;
     flex-direction: column;
-    place-content: start;
+    place-content: flex-start;
     place-items: center;
     min-height: 68vh;
     width: 100%;

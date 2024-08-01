@@ -2,7 +2,6 @@ import Markdown from 'react-markdown';
 import BottomBar from '../bars/bottomBar/bottomBar'
 import { GetMembers, GetSamura } from './request'
 import './styles/desktop.css'
-import { Link } from 'react-router-dom';
 
 function About() {
     return (
@@ -22,7 +21,7 @@ function SamuraAbout() {
     return (
         <div className='aboutSamuraBack'>
             <div className='aboutSamura'>
-                <img src={process.env.PUBLIC_URL + '/logo/white.png'} />
+                <img src={process.env.PUBLIC_URL + '/logo/white.png'} alt = 'samura'/>
 
                 <div>
                     <Markdown>
