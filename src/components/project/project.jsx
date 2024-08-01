@@ -3,13 +3,14 @@ import BottomBar from '../bars/bottomBar/bottomBar'
 import './styles/desktop.css'
 import './styles/mobile.css'
 import { useSelector } from "react-redux"
+import { Link } from 'react-router-dom'
 
 function ProjectView() {
     const project = useSelector((state) => state.project).project
 
     return (
         <div className="projectView">
-            <a href='/' className='backMobile'>{'< volver'}</a>
+            <Link to='/' className='backMobile'>{'< volver'}</Link>
 
             <div className="projectViewBox">
                 <img className="projectViewImage" src={project.image} alt="" />
@@ -20,7 +21,7 @@ function ProjectView() {
                         <h4>{project.name}</h4>
                         <text>{project.date}</text>
 
-                        <a href='/' className='back'>{'< volver'}</a>
+                        <Link to='/' className='back'>{'< volver'}</Link>
 
                     </div>
 
