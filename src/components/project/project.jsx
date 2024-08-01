@@ -1,3 +1,4 @@
+import Markdown from 'react-markdown'
 import BottomBar from '../bars/bottomBar/bottomBar'
 import './styles/desktop.css'
 import './styles/mobile.css'
@@ -16,9 +17,9 @@ function ProjectView() {
                     <div className="projectViewInfo">
 
                         <div className="projectViewInfoBasic">
-                            <p>{project.city}</p>
+                            <text>{project.city}</text>
                             <h4>{project.name}</h4>
-                            <p>{project.date}</p>
+                            <text>{project.date}</text>
 
                             <a href='/' className='back'>{'< volver'}</a>
 
@@ -44,9 +45,9 @@ function ProjectView() {
 
                         <p className="projectViewInfoDescription">
                             {project.description}
-                            <p>
+                            <Markdown>
                                 {project.extraDescription}
-                            </p>
+                            </Markdown>
                         </p>
                     </div>
                 </div>

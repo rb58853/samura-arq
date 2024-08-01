@@ -1,9 +1,10 @@
-.fullContainer{
+.fullContainer {
     display: flex;
     place-content: center;
     place-items: center;
     flex-direction: column;
 }
+
 .projectView {
     margin-top: 12vh;
     margin-bottom: 4vh;
@@ -14,7 +15,7 @@
     min-height: 84vh;
     max-height: 1000vh;
     width: 90%;
-    background-color: turquoise;
+    /* background-color: turquoise; */
 }
 
 .projectViewBox {
@@ -25,21 +26,20 @@
     width: min(60vh, 100%);
     place-items: center;
     place-content: center;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .projectViewImage {
     width: 100%;
     height: auto;
-    /* object-fit: cover; */
 }
 
 .projectViewInfo {
     display: flex;
-    background-color: rgb(25, 0, 255);
+    /* background-color: rgb(25, 0, 255); */
     width: 100%;
-    max-height: 40%;
-    gap: 10px;
+    max-height: 38vh;
+    gap: 20px;
 
 }
 
@@ -49,24 +49,25 @@
 
 .projectViewInfoBasic {
     display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
+
     flex-direction: column;
-    min-width: 45%;
+    max-width: 45%;
+    width: fit-content;
     /* background-color: aquamarine; */
-    /* height: 100%; */
 }
+
 .projectViewInfoBasic>* {
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
 .projectViewInfoDescription {
-    min-width: 45%;
     overflow-y: auto;
-    flex-grow: 1;
-    /* max-height: 200px; */
-    background-color: rgba(137, 43, 226, 0.37);
-    /* margin-top:auto ; */
-    /* height: 100%; */
+    /* background-color: rgba(226, 43, 89, 0.37); */
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .back {
@@ -78,6 +79,7 @@
     color: var(--text-color);
 
 }
+
 .backMobile {
     display: none;
 }

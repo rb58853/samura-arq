@@ -56,6 +56,6 @@
         font-weight: 600;
         text-decoration: none;
         color: var(--text-color);
-        background-color: blanchedalmond;
+        /* background-color: blanchedalmond; */
    }
 }
