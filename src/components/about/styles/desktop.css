@@ -1,11 +1,10 @@
 .about {
     margin-top: 8vh;
-    margin-bottom: 24vh;
     display: flex;
     flex-direction: column;
     place-content: flex-start;
     place-items: center;
-    min-height: 68vh;
+    min-height: 92vh;
     width: 100%;
     background-color: var(--background-color);
 

@@ -3,14 +3,41 @@
     flex-direction: row;
     width: 100%;
     background-color: var(--bar-color);
+    color: var(--bar-text-color);
     height: 24vh;
-    place-items: center;
     margin-top: auto;
     margin-bottom: 0px;
+
+    place-content: center;
+    place-items: center;
 
 }
 
 .bottomBar.fixed {
     position: fixed;
     bottom: 0px;
+}
+
+.contactInfo {
+    display: flex;
+    /* background-color: aqua; */
+    gap: 20px;
+}
+
+.contactInfo>p {margin-top: 5px;}
+
+.contactInfo>div>* {
+    margin-block: 5px;
+}
+
+
+.linkText {
+    color: var(--bar-text-color);
+    text-decoration: none;
+}
+
+.socialImage{
+    color: var(--bar-text-color);
+    width: 20px;
+    height: 20px;
 }

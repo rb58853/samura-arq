@@ -5,13 +5,12 @@
     }
 
     .projectWidget {
-        gap: 5px;
         place-items: center;
         width: 80%;
         height: 100%;
         padding: 10px;
         flex-direction: column;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+        /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05); */
 
     }
 
@@ -25,7 +24,10 @@
         width: 100%;
         pointer-events: none;
         max-height: 50%;
-        /* background-color: blue; */
+    }
+
+    .projectWidget>div>h4 {
+        margin-block: 15px;
     }
 
 
