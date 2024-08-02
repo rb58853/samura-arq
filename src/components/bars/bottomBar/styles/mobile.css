@@ -7,11 +7,40 @@
         overflow: hidden;
         background-color: var(--bar-color);
         color: var(--bar-text-color);
-        height: 50vh;
+        min-height: 50vh;
         margin-top: auto;
-    
+
         place-content: center;
         place-items: center;
-    
+
     }
+
+    .bottomBar>* {
+        /* background-color: antiquewhite; */
+        width: 90%;
+    }
+
+    .emailZone>div {
+        display: flex;
+        flex-direction: column;
+        place-items: flex-start;
+        gap: 20px;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .input {
+        width: 100%;
+        max-width: 80%;
+    }
+    
+    .input.area {
+        max-width: 97%;
+
+    }
+
+    .nameEmail {
+        width: 100%;
+    }
+
 }

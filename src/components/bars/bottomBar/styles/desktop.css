@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     overflow: hidden;
     background-color: var(--bar-color);
     color: var(--bar-text-color);
-    height: 28vh;
+    min-height: 28vh;
     margin-top: auto;
     margin-bottom: 0px;
 
     place-content: center;
+    padding-block: 10px;
     /* place-items: center; */
 
 }
@@ -21,7 +22,7 @@
 }
 
 .bottomBar>* {
-    margin-block: 2%
+    margin-block: 2%;
 }
 
 
@@ -89,10 +90,12 @@
     margin-top: 2px;
     padding: 5px;
     font-size: 100%;
-    width: 200px;
+    max-width: 200px;
 }
 .input.area {
     height: 88px;
+    min-width: 97%;
+    min-height: 88px;
 }
 
 
