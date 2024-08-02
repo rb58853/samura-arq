@@ -52,7 +52,7 @@ function SendEmail() {
                     </div>
 
                     <div>
-                        <text>Escribe tu nombre</text>
+                        <text>Escribe tu email</text>
                         <input className='input' type="text" placeholder='email' />
                     </div>
                 </div>
