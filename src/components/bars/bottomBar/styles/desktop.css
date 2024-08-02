@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     background-color: var(--bar-color);
     color: var(--bar-text-color);
-    height: 24vh;
+    height: 28vh;
     margin-top: auto;
     margin-bottom: 0px;
 
     place-content: center;
-    place-items: center;
+    /* place-items: center; */
 
 }
 
@@ -18,13 +20,20 @@
     bottom: 0px;
 }
 
+.bottomBar>* {
+    margin-block: 2%
+}
+
+
 .contactInfo {
     display: flex;
     /* background-color: aqua; */
     gap: 20px;
 }
 
-.contactInfo>p {margin-top: 5px;}
+.contactInfo>p {
+    margin-top: 5px;
+}
 
 .contactInfo>div>* {
     margin-block: 5px;
@@ -36,8 +45,72 @@
     text-decoration: none;
 }
 
-.socialImage{
+.socialImage {
     color: var(--bar-text-color);
     width: 20px;
     height: 20px;
+}
+
+.emailZone{
+    display:  flex;
+    flex-direction: column;
+}
+.emailZone>div{
+    display:  flex;
+    gap: 20px;
+}
+
+.nameEmail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.nameEmail>div {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nameEmail>div>text {
+    margin-top: 0px;
+}
+
+.input {
+    background-color: var(--bar-color);
+    color: var(--bar-text-color);
+    border: solid 1px var(--bar-text-color);
+    margin-top: 2px;
+    padding: 5px;
+    font-size: 100%;
+    width: 200px;
+}
+.input.area {
+    height: 88px;
+}
+
+
+.nameEmail>div>input:focus {
+    /* background-color: blueviolet; */
+    /* border: none; */
+    outline: none;
+    border: solid 1.2px var(--bar-text-color);
+    border-radius: 3px;
+
+}
+
+.sendButton{
+    width: fit-content;
+    padding: 9px;
+    font-size: 100%;
+    /* color: var(--text-color); */
+    background-color: var(--bar-text-color);
+    border: none;
+    margin-left: auto;
 }

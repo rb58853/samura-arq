@@ -1,0 +1,17 @@
+@media(max-width:900px) {
+    .bottomBar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        background-color: var(--bar-color);
+        color: var(--bar-text-color);
+        height: 50vh;
+        margin-top: auto;
+    
+        place-content: center;
+        place-items: center;
+    
+    }
+}
