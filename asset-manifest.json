@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/samura-arq/static/css/main.b4fe60fe.css",
-    "main.js": "/samura-arq/static/js/main.357be5ff.js",
+    "main.css": "/samura-arq/static/css/main.98010bc7.css",
+    "main.js": "/samura-arq/static/js/main.3bf0a26e.js",
     "index.html": "/samura-arq/index.html",
-    "main.b4fe60fe.css.map": "/samura-arq/static/css/main.b4fe60fe.css.map",
-    "main.357be5ff.js.map": "/samura-arq/static/js/main.357be5ff.js.map"
+    "main.98010bc7.css.map": "/samura-arq/static/css/main.98010bc7.css.map",
+    "main.3bf0a26e.js.map": "/samura-arq/static/js/main.3bf0a26e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4fe60fe.css",
-    "static/js/main.357be5ff.js"
+    "static/css/main.98010bc7.css",
+    "static/js/main.3bf0a26e.js"
   ]
 }
