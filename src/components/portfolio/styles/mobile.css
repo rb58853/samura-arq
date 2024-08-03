@@ -1,0 +1,9 @@
+@media(max-width:700px) {
+    .projectWidgetPortfolio>h3 {
+        display: block;
+    }
+
+    .projectWidgetViewPortfolio {
+        display: none;
+    }
+}

@@ -1,0 +1,89 @@
+.fullContainer {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.portfolio {
+    margin-top: 8vh;
+    min-height: 68vh;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 100%;
+    overflow-y: auto;
+    background-color: var(--background-color);
+    /* background-color: brown; */
+}
+
+.projectsWidgetsPortfolio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: min(90%, max(40%, 600px));
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 20px;
+    /* background-color: blueviolet; */
+}
+
+.projectWidgetPortfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    place-items: center;
+    width: 100%;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+
+.projectWidgetPortfolio>h3 {
+    display: none;
+}
+
+.projectWidgetPortfolio>img {
+    width: 100%;
+    aspect-ratio: 3/2;
+
+}
+
+.projectWidgetViewPortfolio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+
+    font-size: 200%;
+    font-weight: 600;
+    color: var(--bar-text-color);
+    background-color: rgba(0, 0, 0, 0.142);
+    opacity: 0;
+
+    transition-property: backdrop-filter, box-shadow, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+
+}
+
+.projectWidgetViewPortfolio:hover {
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0 0 100px rgb(0, 0, 0);
+    opacity: 1;
+}
+
+
+
+.projectWidget>div {
+    width: 45%;
+    pointer-events: none;
+}

@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom'
 
 function ProjectView() {
     const project = useSelector((state) => state.project).project
+    const sesion = useSelector((state) => state.sesion).name
 
     return (
         <div className="projectView">
-            <Link to='/' className='backMobile'>{'< volver'}</Link>
+            <Link to={`/${sesion}`} className='backMobile'>{'< volver a ' + sesion}</Link>
 
             <div className="projectViewBox">
                 <img className="projectViewImage" src={project.image} alt="" />
@@ -21,7 +22,7 @@ function ProjectView() {
                         <h4>{project.name}</h4>
                         <text>{project.date}</text>
 
-                        <Link to='/' className='back'>{'< volver'}</Link>
+                        <Link to={`/${sesion}`} className='back'>{'< volver a ' + sesion}</Link>
 
                     </div>
 

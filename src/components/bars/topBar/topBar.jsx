@@ -28,7 +28,7 @@ function ButtonsNavigate() {
 
             <Link
                 className={`button ${sesion === 'portfolio' ? 'active' : ''}`}
-                to='/'
+                to='/portfolio'
                 onClick={() => { dispatch(setSesion('portfolio')) }}
             >
                 PORTFOLIO
