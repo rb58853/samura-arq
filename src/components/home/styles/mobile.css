@@ -29,6 +29,10 @@
     .projectWidget>div>h4 {
         margin-block: 15px;
     }
+    
+    .projectWidgetInfo{
+        min-width: 100%;
+    }
 
 
 }
